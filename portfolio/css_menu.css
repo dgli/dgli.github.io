@@ -1,0 +1,84 @@
+.stripes {
+  vertical-align: baseline;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #000;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.tile {
+}
+
+.tile:hover {
+  opacity: 1;
+}
+
+
+/*
+ * INDIVIDUAL TILES
+ */
+
+#one {
+  background: url("./project_thumbnails/project1.png") #000000;
+}
+#two {
+  background: url("./project_thumbnails/project2.png") #000000;
+}
+#three {
+  background: url("./project_thumbnails/project3.png") #000000 ;
+}
+#four {
+  background: url("./project_thumbnails/project4.png") #000000 ;
+}
+#five {
+  background: url("./project_thumbnails/project5.png") #000000 ;
+}
+#six {
+  background: url("./project_thumbnails/project6.png") #000000 ;
+}
+#seven {
+  background: url("./project_thumbnails/project7.png") #000000 ;
+}
+#eight {
+  background: url("./project_thumbnails/project8.png") #000000 ;
+}
+#nine {
+  background: url("./project_thumbnails/project9.png") #000000 ;
+}
+#ten {
+  background: url("./project_thumbnails/project10.png") #000000 ;
+}
+
+/*time general properties*/
+ .tile {
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 12.5%;
+  float: top;
+
+  text-align: left;
+  text-decoration: bold;
+
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  moz-transition: all 0.3s;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right 50px top 20%;
+
+  font-family: Helvetica, Arial, Sans-serif;
+  opacity: 0.75;
+
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+
+  background-position: center;
+}

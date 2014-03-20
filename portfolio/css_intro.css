@@ -1,0 +1,118 @@
+@font-face {
+	font-family: 'Myriad-Pro';
+	src: url('/fonts/MyriadPro-Regular.eot'); /* IE */  
+	src: local('Myriad-Pro'), url('/fonts/MyriadPro-Regular.otf') format('truetype'); /* non-IE */
+	/*src: local('Myriad-Pro'), url('/fonts/Myriad-Pro.woff') format('woff'); /* Modern Browsers */
+}
+
+@font-face {
+	font-family: 'Myriad-Pro-Bold';
+	src: url('/fonts/MyriadPro-Bold.eot'); /* IE */  
+	src: local('Myriad-Pro-Bold'), url('/fonts/MyriadPro-Bold.eot') format('truetype'); /* non-IE */
+	/*src: local('Myriad-Pro-Bold'), url('/fonts/Myriad-Pro-Bold.woff') format('woff'); /* Modern Browsers */
+}
+
+body{
+	background-color: #222222;
+	/*overflow: hidden;*/
+}
+
+#wrapper{
+	position: absolute;
+
+	color: #DDDDDD;
+
+	padding-left: 0px;
+	top: 40%;
+	left: 55.5%;
+	margin: 0px;
+
+	z-index: 9998;
+}
+
+#name{
+	position: absolute;
+
+	top: 40%;
+	bottom: 0%;
+	right: 45%;
+	padding-right: 10px;
+	padding-top: 20px;
+
+	border-right: thick solid #099cff;
+	z-index: 9997;
+}
+
+li{
+	list-style: none;
+
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 5px;
+
+	border: medium solid #099cff;
+
+	color: #ffffff;
+}
+
+li:hover{
+	border-color: #A4F3ff;
+	background-image: none;
+	background-color: #099cff;
+
+	color: #000000;
+}
+
+#image_code, #image_default, #image_starcraft, #image_about{
+	position: absolute;
+	opacity: 0;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+#image_code{
+	background-image: url("./introbg/code.jpg");
+}
+
+#image_default{
+	background-image: url("./introbg/default.jpg");
+}
+
+#image_about{
+	background-image: url("./introbg/science.jpg");
+}
+
+#image_starcraft{
+	background-image: url("./introbg/starcraft.jpg");
+}
+
+img{
+	height: auto;
+}
+
+p{
+	font-family: MyriadPro-Bold;
+	font-size: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#about{
+	font-family: MyriadPro-Regular;
+	margin-top: 0px;
+	text-align: right;
+}
+
+a{
+	color: #ffffff;
+}
+a:link {text-decoration:none;}
+a:visited {
+  text-decoration:underline;
+  color: #FFFFFF;
+}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}

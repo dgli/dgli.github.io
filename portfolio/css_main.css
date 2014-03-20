@@ -1,0 +1,298 @@
+/*FONT FACE*/
+@font-face {
+  font-family: 'Myriad-Pro';
+  src: url('/fonts/MyriadPro-Regular.eot'); /* IE */  
+  src: local('Myriad-Pro'), url('/fonts/MyriadPro-Regular.otf') format('truetype'); /* non-IE */
+  /*src: local('Myriad-Pro'), url('/fonts/Myriad-Pro.woff') format('woff'); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Myriad-Pro-Bold';
+  src: url('/fonts/MyriadPro-Bold.eot'); /* IE */  
+  src: local('Myriad-Pro-Bold'), url('/fonts/MyriadPro-Bold.eot') format('truetype'); /* non-IE */
+  /*src: local('Myriad-Pro-Bold'), url('/fonts/Myriad-Pro-Bold.woff') format('woff'); /* Modern Browsers */
+}
+
+
+/* STYLES */
+body{
+  background-color: #222222;
+  color: #dddddd;
+  overflow-x: hidden;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.wrapper {
+  font-family: arial;
+  font-weight: 200;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-left:0%;
+}
+
+iframe{
+  border: 0px;  
+  bottom: 0px;
+}
+
+
+.imageframe{  
+  width: 100%;
+  height: 300px;
+  border: 2px #099cff;
+}
+
+.menuframe{
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+h1{
+  font-family: MyriadPro-Bold;
+  font-size: 200%;
+  font-weight: 200;
+  color: #099cff;
+}
+
+h2 {
+  font-weight: 200;
+}
+
+.slideItWrapper {
+  margin-top: 20px;
+  margin-left: 10px;
+  position: relative;
+  z-index: 9999;
+}
+
+.slideIt:hover {
+  background-color: #099CFF;
+
+  transition: all 200ms linear;
+  -moz-transition: all 200ms linear; /* Firefox 4 */
+  -webkit-transition: all 200ms linear; /* Safari and Chrome */
+  -o-transition: all 200ms linear; /* Opera */
+}
+
+.slideIt {
+  left: 8px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #888888;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  position: relative;
+}
+.slideIt span {
+  font-size: 20px;
+  left: 6px;
+  top: -3px;
+  position: absolute;
+  text-align: center;
+  text-indent: -9999px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  background-image: url("http://purplerockscissors.com/wp-content/themes/prpl/images/casestudies/bg-controls.png");
+  background-size: 150%;
+  background-position: 4px 7px;
+}
+.slideIt span.open {
+  background-position: 4px 7px;
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.slideIt span.close {
+  background-position: -19px 7px;
+  opacity: 0;
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+.slideIt.active .close {
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.slideIt.active .open {
+  opacity: 0;
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+.slideIt:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: -13px;
+  top: 10px;
+  border-top: 5px solid transparent;
+  border-right: 10px solid #888888;
+  border-bottom: 5px solid transparent;
+}
+.slideIt:hover:before {
+  left: -9px;
+  color: #099CFF;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+section {
+  margin-left:100px;
+  margin-right:100px;
+}
+
+#intro{
+  min-height: 100%;
+}
+
+/* Sixteen */
+h3, li {
+  font-family: Consolas, monaco, monospace;
+  font-weight: 120%;
+  font-style: bold;
+
+  transition: all 200ms linear;
+  -moz-transition: all 200ms linear; /* Firefox 4 */
+  -webkit-transition: all 200ms linear; /* Safari and Chrome */
+  -o-transition: all 200ms linear; /* Opera */
+}
+
+h3:before {
+  font-family: monospace;
+}
+
+.sixteen {
+  /*text-shadow: 0px 0px 0px black;*/
+  text-shadow: 0 1px 1px rgba(255,255,255,.3);
+}
+.sixteen:hover {
+  color: rgba(0, 0, 0, 0.75);
+  text-shadow: -6px 0px 4px black;
+}
+
+
+#introframe, #intropane{
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0%;
+}
+
+
+
+
+
+
+
+
+/* REQUIRED */
+#pageslide {
+  /* These styles MUST be included. Do not change. */
+  display: none;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  /* Specify the width of your pageslide here */
+  width: 240px;
+  /* styles */
+
+
+  left: -240px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+  border-right: thick solid #099cff;
+
+/*  background-color: #DDDDDD;
+padding-right: 5px;*/
+}
+
+#pageslide h3 {
+  font-size: 1.8em;
+  margin: 0;
+  padding: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* TOP LIST STUDFDF*/
+
+li{
+  list-style: none;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 5px;
+
+  border: none;
+
+  color: #ffffff;
+}
+
+li:hover{
+  background-image: none;
+  background-color: #099cff;
+
+  color: #000000;
+}
+
+#navcontainer{
+
+  border-bottom: thick solid #099cff;
+}
+
+#navlist{
+  margin: 0px;
+  padding: 0px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+#navlist li
+{
+  font-family: MyriadPro-Regular;
+  display: inline;
+  list-style-type: none;
+  border: none;
+}
+
+a{
+  color: #ffffff;
+}
+a:link {text-decoration:none;}
+a:visited {
+  text-decoration:underline;
+  color: #FFFFFF;
+}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+
+
+
+background-image: -moz-linear-gradient(left,  rgba(0,0,0,0) 75%, rgba(0,0,0,0) 84%, rgba(0,0,0,1) 100%), url(./menubg.jpg); /* FF3.6+ */
+background-image: -webkit-gradient(linear, left top, right top, color-stop(75%,rgba(0,0,0,0)), color-stop(84%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))), url(./menubg.jpg); /* Chrome,Safari4+ */
+background-image: -webkit-linear-gradient(left,  rgba(0,0,0,0) 75%,rgba(0,0,0,0) 84%,rgba(0,0,0,1) 100%), url(./menubg.jpg); /* Chrome10+,Safari5.1+ */
+background-image: -o-linear-gradient(left,  rgba(0,0,0,0) 75%,rgba(0,0,0,0) 84%,rgba(0,0,0,1) 100%), url(./menubg.jpg); /* Opera 11.10+ */
+background-image: -ms-linear-gradient(left,  rgba(0,0,0,0) 75%,rgba(0,0,0,0) 84%,rgba(0,0,0,1) 100%), url(./menubg.jpg); /* IE10+ */
+background-image: linear-gradient(to right,  rgba(0,0,0,0) 75%,rgba(0,0,0,0) 84%,rgba(0,0,0,1) 100%), url(./menubg.jpg); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+
+table{
+  border-top: thick solid #099cff;
+  text
+}
